@@ -13,6 +13,13 @@ var Donors = sequelize.define("Donors", {
 		type: DataTypes.STRING,
 		allowNull: true
 	}
+
+	},{
+		classMethod: {
+		associate: function(models) {
+			Donors.hasMany(models.Recipient)
+		}
+	  }
 	});
 	return Donors;
 };
