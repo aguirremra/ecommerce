@@ -1,3 +1,4 @@
+console.log('models/donors.js loaded');
 module.exports = function(sequelize, DataTypes){
 
 var Donors = sequelize.define("Donors", {
