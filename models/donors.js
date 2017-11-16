@@ -12,12 +12,13 @@ var Donors = sequelize.define("Donors", {
 	username:{
 		type: DataTypes.STRING,
 		allowNull: true
-	},{
+	}
+	}, {
 		classMethod: {
-		associate: function(models) {
-			Donors.hasMany(models.Recipient)
+			associate: function(models){
+				Donors.hasMany(models.Recipient)
+			}
 		}
-	  }
 	});
 	return Donors;
 };
