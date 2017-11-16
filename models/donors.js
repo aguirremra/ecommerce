@@ -12,8 +12,6 @@ var Donors = sequelize.define("Donors", {
 	username:{
 		type: DataTypes.STRING,
 		allowNull: true
-	}
-
 	},{
 		classMethod: {
 		associate: function(models) {
