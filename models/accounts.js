@@ -1,3 +1,4 @@
+console.log('models/accounts.js loaded');
 module.exports = function(sequelize, DataTypes){
 
 var Accounts = sequelize.define("Accounts", {

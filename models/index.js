@@ -1,4 +1,5 @@
 'use strict';
+console.log('models/index.js loaded');
 
 var fs        = require('fs');
 var path      = require('path');
@@ -20,6 +21,7 @@ fs
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
   })
   .forEach(function(file) {
+    console.log('load file: ' + file);
     var model = sequelize['import'](path.join(__dirname, file));
     db[model.name] = model;
   });
