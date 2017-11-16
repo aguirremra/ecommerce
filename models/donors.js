@@ -1,3 +1,4 @@
+console.log('models/donors.js loaded');
 module.exports = function(sequelize, DataTypes){
 
 var Donors = sequelize.define("Donors", {
@@ -12,12 +13,13 @@ var Donors = sequelize.define("Donors", {
 	username:{
 		type: DataTypes.STRING,
 		allowNull: true
-	},{
+	}
+	}, {
 		classMethod: {
-		associate: function(models) {
-			Donors.hasMany(models.Recipient)
+			associate: function(models){
+				Donors.hasMany(models.Recipient)
+			}
 		}
-	  }
 	});
 	return Donors;
 };
