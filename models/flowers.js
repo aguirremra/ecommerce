@@ -1,7 +1,7 @@
 console.log('models/flowers.js loaded');
 module.exports = function(sequelize, DataTypes){
 
-var flowers = sequelize.define("flowers", {
+var Flowers = sequelize.define("Flowers", {
 		flower_name: {
 			type: DataTypes.STRING,
 			allowNull: false
@@ -32,5 +32,5 @@ var flowers = sequelize.define("flowers", {
 		
 	// });
 	
-	return flowers;
+	return Flowers;
 };

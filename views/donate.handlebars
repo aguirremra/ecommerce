@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row one">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <p class="flowerlist">Donate this flower!</p>
+      <hr>
+        {{#each flowers}}
+        <li class="list-group-item flower-item">
+          <span class="flowertext" >{{flower_name}}</span>
+          <img src="{{imageurl_thumbnail}}">
+        <button id="flower" class= "btn btn-default btnflower" data-id="{{id}}">Show Detail</button>
+        </li>
+        <br>
+        {{/each}}
+    </div>
+</div>
