@@ -19,8 +19,6 @@ module.exports = function(app){
 
   app.post('/api/flower', apiController.createFlower);
 
-  app.post('/api/donation', apiController.createDonation);
-
   app.put('/api/recipient/:id', apiController.updateRecipient);
 
   app.put('/api/donor/:id', apiController.updateDonor);
