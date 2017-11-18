@@ -1,3 +1,4 @@
+console.log('models/recipients.js loaded');
 module.exports = function(sequelize, DataTypes){
 
 var Recipients = sequelize.define("Recipients", {
