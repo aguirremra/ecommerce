@@ -1,6 +1,7 @@
+console.log('models/recipients.js loaded');
 module.exports = function(sequelize, DataTypes){
 
-var Recipients = sequelize.define("Recipients", {
+var recipients = sequelize.define("recipients", {
 
 	first_name: {
 		type: DataTypes.STRING,
@@ -19,5 +20,5 @@ var Recipients = sequelize.define("Recipients", {
 		allowNull: true
 	}
 	});
-	return Recipients;
+	return recipients;
 };
