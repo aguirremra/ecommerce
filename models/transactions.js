@@ -1,7 +1,7 @@
 console.log('models/transactions.js loaded');
 module.exports = function(sequelize, DataTypes){
 
-var transactions = sequelize.define("transactions", {
+var Transactions = sequelize.define("Transactions", {
 		donor_id: {
 			type: DataTypes.INTEGER,
 			allowNull: false
@@ -24,5 +24,5 @@ var transactions = sequelize.define("transactions", {
 	// }
 	   );
 
-	return transactions;
+	return Transactions;
 };

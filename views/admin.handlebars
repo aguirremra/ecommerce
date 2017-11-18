@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row one">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <p class="donorlist">Admin View!</p>
+      <hr>
+        {{#each donors}}
+        <li class="list-group-item donor-item">
+          <span class="donortext" >{{first_name}}</span>
+        <button id="update" class= "btn btn-default btnupdate" data-id="{{id}}">Update</button>
+        </li>
+        <br>
+        {{/each}}
+        {{#each recipients}}
+        <li class="list-group-item donor-item">
+          <span class="donortext" >{{first_name}}</span>
+        <button id="update" class= "btn btn-default btnupdate" data-id="{{id}}">Update</button>
+        </li>
+        <br>
+        {{/each}}        
+    </div>
+</div>

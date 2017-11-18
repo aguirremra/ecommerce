@@ -1,7 +1,7 @@
 console.log('models/donors.js loaded');
 module.exports = function(sequelize, DataTypes){
 
-var donors = sequelize.define("donors", {
+var Donors = sequelize.define("Donors", {
 		first_name: {
 			type: DataTypes.STRING,
 			allowNull: true
@@ -30,5 +30,5 @@ var donors = sequelize.define("donors", {
 		}
 	});
 	
-	return donors;
+	return Donors;
 };
