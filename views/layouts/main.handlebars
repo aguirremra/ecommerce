@@ -4,11 +4,119 @@
 	<meta charset="UTF-8">
 		<title>Flowers</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="/assets/js/index.js"></script>
 	</head>
+
 	<body>
+	<!--nav bar-->
+
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">Flowers</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Go Somwhere</a></li>
+                            <li><a href="#">Do Something</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">another link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div class="form-group">
+                        <button id="btn-login" class="btn btn-primary btn-margin">
+                                         Log In
+                                         </button>
+                        <!-- <div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                            </div> -->
+                        <button id="btn-logout" class="btn btn-primary btn-margin">
+                                         Log Out
+                                         </button>
+                    </div>
+                    </form>
+            </div>
+
+        </div>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<!-- JUMBO -->
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <h1 class="animated pulse"><a href="index.html">Philanthropic Florists</a></h1>
+                <p>Help us by helping others! Dontate flowers today.</p>
+            </div>
+        </div>
+    </div>
+
+	
 		{{{ body }}}
+
+
+<!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container social-links">
+            <a href="https://www.facebook.com" class="ico-anim social-facebook" title="Facebook" target="_blank"></a>
+            <span class="icon-facebook">
+          <picture>
+            <source srcset="/assets/images/facebook.png" media="(min-width: 600px)">
+            <img src="/assets/images/facebook.png" alt="Facebook">
+          </picture>
+        </span>
+            <a href="https://www.instagram.com" class="ico-anim social-instagam" title="Instagram" target="_blank"></a>
+            <span class="icon-instagram">
+          <picture>
+            <source srcset="/assets/images/instagram.png" media="(min-width: 600px)">
+            <img src="/assets/images/instagram.png" alt="instagram">
+          </picture>
+        </span>
+            <a href="https://www.twitter.com" class="ico-anim social-twitter" title="Twitter" target="_blank"></a>
+            <span class="icon-facebook">
+          <picture>
+            <source srcset="/assets/images/twitter.png" media="(min-width: 600px)">
+            <img src="/assets/images/twitter.png" alt="twitter">
+          </picture>
+        </span>
+            <p class="text-muted">Copyright &copy; 2017 Team Philanthropic Florists Inc.</p>
+        </div>
+    </footer>
 	</body>
 </html>

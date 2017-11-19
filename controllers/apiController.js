@@ -14,15 +14,22 @@ const controller = function() {
   };
 
   this.getOneFlower = function(req, res){
+    console.log('IS THIS EVEN WORKING?')
     db.Flowers.findAll({
       where: {
         id: req.params.id
       }
     }).then(function(data){
+      console.log(data);
       var hbObj = {
         flowers: data
       }
+
+      
       res.render('donate', hbObj);
+    })
+    .catch(function(err){
+      console.log(err);
     });
   };
 
