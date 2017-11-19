@@ -107,7 +107,6 @@ const controller = function() {
     db.Donors.create(req.body).then(function(data){
       res.json(data);
       console.log(data.id);
-      res.json( { id: result.insertedId });
     });
   };
 
@@ -119,12 +118,6 @@ const controller = function() {
 
   this.createFlower = function(req, res){
     db.Flowers.create(req.body).then(function(data){
-      res.json(data);
-    });
-  };
-
-  this.createDonation = function(req, res){
-    db.Donations.create(req.body).then(function(data){
       res.json(data);
     });
   };
