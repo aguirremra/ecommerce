@@ -7,8 +7,8 @@
         {{#each flowers}}
         <li class="list-group-item flower-item">
           <span class="flowertext" >{{flower_name}}</span>
-          <img src="{{imageurl_thumbnail}}">
-        <button id="flower" class= "btn btn-default btndevour" data-id="{{id}}">Show Detail</button>
+          <img class="flowerImg" data-id={{id}} src="{{imageurl_thumbnail}}">
+        {{!-- <button id="flower" class= "btn btn-default btndevour" data-id="{{id}}">Show Detail</button> --}}
         </li>
         <br>
         {{/each}}
