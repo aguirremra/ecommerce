@@ -6,11 +6,9 @@
       <hr>
         {{#each flowers}}
         <li class="list-group-item flower-item">
-          <span class="flowertext" >{{flower_name}}</span>        
-        
+          <span class="flowertext" >{{flower_name}}</span>
           <img id="flowerImg" src="{{imageurl_large}}" alt="flowers">
-
-        <button id="flower" class= "btn btn-default btnflower" data-id="{{id}}">Show Detail</button>
+          <p>{{description}}</p>
         </li>
         <br>
         {{/each}}
