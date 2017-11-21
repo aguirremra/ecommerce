@@ -1,10 +1,11 @@
-console.log('models/flowers.js loaded');
 module.exports = function(sequelize, DataTypes){
-
 var Flowers = sequelize.define("Flowers", {
 		flower_name: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: false,
+			validate: {
+        		len: [1, 140]
+      		}
 		},
 		description: {
 			type: DataTypes.TEXT,
@@ -23,14 +24,19 @@ var Flowers = sequelize.define("Flowers", {
 			allowNull: false
 		}
 		
+	}, {
+		classMethod: {
+			associate: function(models){
+				Flowers.hasMany(models.Donors)
+			}
+		}
+	}, {
+		classMethod: {
+			associate: function(models){
+				Flowers.hasMany(models.Recipients)
+			}
+		}
 	});
-	// {	
-	// 	timestamps: true,
-	// 	deletedAT: 'destroyTime',
-	// 	paranoid: true
-
-		
-	// });
 	
 	return Flowers;
 };

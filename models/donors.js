@@ -4,28 +4,34 @@ module.exports = function(sequelize, DataTypes){
 var Donors = sequelize.define("Donors", {
 		first_name: {
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false,
+			validate: {
+        		len: [1, 140]
+      		}
 		},
 		last_name: {
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false,
+			validate: {
+        		len: [1, 140]
+      		}
 		},
 		username:{
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false,
+			validate: {
+        		len: [1, 140]
+      		}
 		},
 		email:{
 			type: DataTypes.STRING,
 			allowNull: true
 		}
-	}, 
-	// {	
-	// 	timestamps: true
-	// },
-	{
+	
+ 	},{
 		classMethod: {
 			associate: function(models){
-				//Donors.hasMany(models.Recipient)
+				Donors.hasOne(models.Recipients)
 			}
 		}
 	});
