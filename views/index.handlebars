@@ -1,15 +1,17 @@
-<div class="container">
-  <div class="row one">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4">
-      <p class="flowerlist">Flowers</p>
+      <h2 class="flowerlist">Our Flowers</h2>
       <hr>
-        {{#each flowers}}
-        <li class="list-group-item flower-item">
-          <span class="flowertext" >{{flower_name}}</span>
-          <a href="/api/flowers/{{id}}"><img class="flowerImg" data-id={{id}} src="{{imageurl_thumbnail}}"></a>
-        </li>
+        
+          <div class ="card-deck text-center">
+            {{#each flowers}}
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <a href="/api/flowers/{{id}}"><img class="card-img-top flowerImg" data-id={{id}} src={{imageurl_thumbnail}} alt="flower image"></a>
+                  <div class="card-block">
+                    <h4 class="card-title">{{flower_name}}</h4>
+                  </div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
         <br>
-        {{/each}}
-    </div>
-</div>
+    
