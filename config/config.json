@@ -1,23 +1,23 @@
 {
-  "development": {
-    "username": "root",
-    "password": "",
-    "database": "flowers_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
+    "development": {
+        "username": "root",
+        "password": "MYdb2018!$",
+        "database": "flowers_db",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "database_test",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "qxexz404qhy4ulpy",
+        "password": "k0fpaxebs1x0b4wd",
+        "database": "database_production",
+        "host": "l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql"
+    }
 }
