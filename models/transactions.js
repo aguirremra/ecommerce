@@ -1,4 +1,3 @@
-console.log('models/transactions.js loaded');
 module.exports = function(sequelize, DataTypes){
 
 var Transactions = sequelize.define("Transactions", {
