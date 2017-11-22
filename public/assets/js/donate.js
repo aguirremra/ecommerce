@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+    console.log( "ready!" );    
 
     $("#submitButton").on("click", function(e){
     	e.preventDefault();
@@ -13,6 +13,7 @@ $( document ).ready(function() {
 			var donorLast = $("#donorLast").val().trim();
 			var donorEmail = $("#donorEmail").val().trim();
 			var donorUser = $("#donorUser").val().trim();
+    	var flowerID = $("#flowerImg").data("id");
 			//create recipient object
 			var newRecipient = {
 	     first_name: recipientFirst,
