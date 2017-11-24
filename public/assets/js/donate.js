@@ -1,7 +1,12 @@
-//  var res = require('../../../controllers/apiController');
-
 $(document).ready(function() {
     console.log("ready!");
+    $("#formContainer").hide();
+    
+    $("#donateButton").on('click', function(e) {
+			e.preventDefault();
+			$("#formContainer").show();
+			console.log('buttonCode')
+		}); 
     $("#submitButton").on("click", function(e) {
         e.preventDefault();
         //get text box values    	
