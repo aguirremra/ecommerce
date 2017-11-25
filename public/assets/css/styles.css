@@ -122,3 +122,10 @@ body{
     padding: 30px;
     flex-direction: column;
 }
+
+.error {
+    color:red;
+}
+.valid {
+    color:green;
+}
