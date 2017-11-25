@@ -11,37 +11,6 @@ $(document).ready(function() {
 
     //form validator
     $("#recipientForm").validate({
-        //specify the validation rules
-        rules: {
-          recipientFirst: "required",
-          recipientLast: "required",
-          recipientMailing: "required",
-          recipientEmail: {
-            required: true,
-            email: true //email is required AND must be in the form of a valid email address
-          },
-          message: "required",
-          donorFirst: "required",
-          donorLast: "required",
-          donorEmail: {
-            required: true,
-            email: true
-          },
-          donorUser: "required"
-        },
-         
-        //specify validation error messages
-        messages: {
-          recipientFirst: "First Name field cannot be blank!",
-          recipientLast: "Last Name field cannot be blank!",
-          recipientMailing: "Address cannot be blank!",
-          recipientEmail: "Please enter a valid email address!",
-          message: "Please enter a message",
-          donorFirst: "First Name field cannot be blank!",
-          donorLast: "Last Name field cannot be blank!",
-          donorEmail: "Please enter a valid email address!",
-          donorUser: "Username cannot be blank!"
-        },
          
         submitHandler: function(form){
 
@@ -144,14 +113,6 @@ $(document).ready(function() {
 
           }
         }         
-    });
-
-    $('#recipientForm input').on('keyup blur', function () {
-        if ($('#recipientForm').valid()) {
-            $('#submitButton').prop('disabled', false);
-        } else {
-            $('#submitButton').prop('disabled', 'disabled');
-        }
     });
 
 });
