@@ -26,46 +26,45 @@
       <h3> Who Would You Like to Donate to? </h3>
       <div class="form-group">
         <label>First Name</label>
-        <input id="recipientFirst" class="form-control" placeholder="Recipient First Name" type="text">
+        <input name="recipientFirst" id="recipientFirst" class="form-control" placeholder="Recipient First Name" type="text" required>
       </div>
       <div class="form-group">
         <label>Last Name</label>
-        <input id="recipientLast"class="form-control" placeholder="Recipient Last Name" type="text">
+        <input name="recipientLast" id="recipientLast" class="form-control" placeholder="Recipient Last Name" type="text" required>
       </div>
       <div class="form-group">                
         <label>Mailing Address</label> 
-        <input id="recipientMailing" class="form-control" placeholder="Recipient mailing address" type="text"> 
+        <input name="recipientMailing" id="recipientMailing" class="form-control" placeholder="Recipient mailing address" type="text" required> 
       </div>
       <div class="form-group">              
         <label>Email Address</label> 
-        <input id="recipientEmail"class="form-control" placeholder="Recipient email address" type="text"> 
-      </div>
+        <input name="recipientEmail" id="recipientEmail" class="form-control" placeholder="Recipient email address" type="text" email">       </div>
       </div>
       <!-- Message Goes Here -->
       <div class="col-lg-4">
         <label>Message</label> 
-        <textarea id="message" class="form-control" rows="10"></textarea>
+        <textarea name="message" id="message" class="form-control" rows="10" required></textarea>
       </div>   
       <!-- Donor Info  -->
       <div class="row col-lg-4">
       <h4> Add Your Information Here! </h4>
         <div class="form-group">
           <label>Donor First Name</label>
-          <input id="donorFirst" class="form-control" placeholder="Donor First Name" type="text"> 
+          <input name="donorFirst" id="donorFirst" class="form-control" placeholder="Donor First Name" type="text" required> 
         </div>
         <div class="form-group">
           <label>Donor Last Name</label>
-          <input id="donorLast" class="form-control" placeholder="Donor Last Name" type="text"> 
+          <input name="donorLast" id="donorLast" class="form-control" placeholder="Donor Last Name" type="text" required> 
         </div>
         <div class="form-group">
           <label>Donor Email</label>
-          <input id="donorEmail" class="form-control" placeholder="Donor Email" type="text"> 
+          <input name="donorEmail" id="donorEmail" class="form-control" placeholder="Donor Email" type="text" email">         
         </div>
         <div class="form-group">
           <label>Donor User Name</label>
-          <input id="donorUser" class="form-control" placeholder="Donor User Name" type="text"> 
+          <input name="donorUser" id="donorUser" class="form-control" placeholder="Donor User Name" type="text" required> 
         </div>
-          <button id="submitButton" class="btn btn-primary pull-right voffset3" type="submit">Submit</button>
+          <button id="submitButton" class="btn btn-primary pull-right voffset3" type="submit" disabled="disabled">Submit</button>
       </div>
     </form>
   </div>
