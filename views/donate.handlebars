@@ -7,9 +7,9 @@
         <hr>
           {{#each flowers}}
             <li class="list-group-item flower-item">
-              <span class="flowertext" >{{flower_name}}</span>
-              <img id="flowerImg" src="{{imageurl_large}}" alt="flowers" data-id={{id}}>
-              <p>{{description}}</p>
+              <span id="flowerName" class="flowertext" >{{flower_name}}</span>
+              <img id="flowerImg" class="donateImg" src="{{imageurl_large}}" alt="flowers" data-id={{id}}>
+              <p id="flowerDesc">{{description}}</p>
             </li>
           <br>
             <button id="donateButton" class="btn btn-primary pull-right voffset3" type="submit">Donate These Flowers!</button>
