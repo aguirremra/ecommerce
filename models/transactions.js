@@ -17,11 +17,7 @@ var Transactions = sequelize.define("Transactions", {
 			type: DataTypes.INTEGER,
 			allowNull: false
 		}
-		}
-	// {	
-	// 	timestamps: true
-	// }
-	   );
+		});
 
 	return Transactions;
 };

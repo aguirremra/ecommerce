@@ -6,14 +6,14 @@ var Recipients = sequelize.define("Recipients", {
 			type: DataTypes.STRING,
 			allowNull: false,
 			validate: {
-        		len: [1, 140]
+        		len: [2, 140]
       		}
 		},
 		last_name: {
 			type: DataTypes.STRING,
 			allowNull: false,
 			validate: {
-        		len: [1, 140]
+        		len: [2, 140]
       		}
 		},
 		email:{
@@ -28,6 +28,17 @@ var Recipients = sequelize.define("Recipients", {
 		classMethod: {
 			associate: function(models){
 				Recipients.hasOne(models.Donors)
+			}
+		}
+	}, {
+		classMethod: {
+			associate: function(models){
+				Recipients.BelongsToMany(models.Transactions,{
+					onDelete: "CASCADE",
+					foreignKey:{
+						allowNull: false
+					}
+				})
 			}
 		}
 	});
