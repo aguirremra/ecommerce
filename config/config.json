@@ -1,7 +1,7 @@
 {
     "development": {
         "username": "root",
-        "password": "Mras*9969",
+        "password": "",
         "database": "flowers_db",
         "host": "127.0.0.1",
         "dialect": "mysql"
@@ -14,10 +14,10 @@
         "dialect": "mysql"
     },
     "production": {
-        "username": "qxexz404qhy4ulpy",
-        "password": "k0fpaxebs1x0b4wd",
+        "username": "",
+        "password": "",
         "database": "database_production",
-        "host": "l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "host": "",
         "dialect": "mysql"
     }
 }
