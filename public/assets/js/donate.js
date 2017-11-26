@@ -113,9 +113,10 @@ $(document).ready(function() {
               // $.post('/api/transaction', newTransaction);
             $("#recipientForm").trigger('reset');
             $("#formContainer").hide();
+            $("#donateButton").hide();
             $("#confirm").show();
             $("#confirmInfo")
-              .append("Tnank you, " + donorFirst + " " + donorLast + " !!")
+              .append("Thank you, " + donorFirst + " " + donorLast + " !!")
               .append("<br><br>")
               .append("Your donation will be sent to: ")
               .append("<br>")
