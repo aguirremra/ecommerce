@@ -3,8 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 		<title>Flowers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral SC">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
+
 		<script src="https://code.jquery.com/jquery.js"></script>
         <!-- jquery form validator -->
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
@@ -15,35 +19,35 @@
 	<body>
   <!--nav bar-->
 
-    <nav class="navbar navbar-default navbar-inverse" role="navigation">
-      <div class="container-fluid navbar-header">
-        <a class="navbar-brand" href="/">Flowers</a>
-      </div>
-      <div class="navbar-center" id="navbarText"> 
-        Philanthropic Florists
-        <br>
-        Help Us by Helping Others!
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <div class="col-md-12">
-          <button id="LoginButton" class="btn btn-primary btn-margin">Log In
-          </button>
-          <button id="LogoutButton" class="btn btn-primary btn-margin">Log Out
-          </button>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Flowers</a>
         </div>
-      </ul>       
+        <div class="navbar-center" id="navbarText"> 
+          <div id="teamName">
+            Philanthropic Florists
+          </div>
+         
+          Help Us by Helping Others!
+        </div>
+          <div class="nav navbar-nav navbar-right">
+            <button id="LoginButton" class="btn btn-primary btn-margin navbar-btn">Log In
+            </button>
+            <button id="LogoutButton" class="btn btn-primary btn-margin navbar-btn">Log Out
+            </button>
+          </div>
+        </div>       
     </nav>
+  <hr>
 
-<!-- JUMBO -->
-    <div class="container">
-      <img id="mainLogo" src="/assets/images/largeFlowerLogo.png" alt="Flower Logo">
-    </div>
-
+<div id="content">
 	
 		{{{ body }}}
 
-
+</div>
 <!-- FOOTER -->
+<br>
     <footer class="footer" id="footer">
         <div class="container social-links">
             <a href="https://www.facebook.com" class="ico-anim social-facebook" title="Facebook" target="_blank"></a>
