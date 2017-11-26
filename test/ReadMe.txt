@@ -5,4 +5,4 @@ Dev Dependencies: Mocha
 
 
 how to run test:
-run `npm test`
+'npm run test-unit'

@@ -4,12 +4,15 @@ var Flowers = sequelize.define("Flowers", {
 			type: DataTypes.STRING,
 			allowNull: false,
 			validate: {
-        		len: [1, 140]
+        		len: [2, 140]
       		}
 		},
 		description: {
 			type: DataTypes.TEXT,
-			allowNull: false
+			allowNull: false,
+			validate: {
+        		len: [5, 1000]
+      		}
 		},
 		quantity: {
 			type: DataTypes.INTEGER,
@@ -34,6 +37,17 @@ var Flowers = sequelize.define("Flowers", {
 		classMethod: {
 			associate: function(models){
 				Flowers.hasMany(models.Recipients)
+			}
+		}
+	}, {
+		classMethod: {
+			associate: function(models){
+				Flowers.BelongsToMany(models.Transactions,{
+					onDelete: "CASCADE",
+					foreignKey:{
+						allowNull: false
+					}
+				})
 			}
 		}
 	});

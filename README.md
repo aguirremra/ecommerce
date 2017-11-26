@@ -25,6 +25,15 @@ Sql side –
 On description page, when submit button is pressed,
 3 tables in DB are updated –
 1)	Flowers db
-2)	Donor’s db
+2)	Donors db
 3)	Recipient db
 4)	Transaction db
+
+Testing
+Dev Dependencies: Mocha
+[Mocha](https://mochajs.org) based test.
+Expect [Expect](https://devhints.io/expectjs) assertions.
+
+
+Running test:
+'npm run test-unit'
