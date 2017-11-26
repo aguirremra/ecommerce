@@ -130,13 +130,18 @@ hr {
 }
 
 #flowerName{
+    background: #F5F3EE;
     color: #4A96AD;
     font-family: garamond;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 #flowerDesc{
+    margin-top: 5px;
     color: #F5F3EE;
     font-family: georgia;
     font-size: 20px;
@@ -156,6 +161,17 @@ body {
 }
 #content {
   flex: 1 0 auto;
+}
+#confirmInfo{
+  font-size: 25px;
+  font-weight: bold;
+}
+textarea{
+  overflow: hidden;
+}
+#break{
+  border-color: #F5F3EE;
+
 }
 
 
