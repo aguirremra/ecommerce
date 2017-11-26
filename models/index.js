@@ -6,16 +6,16 @@ var path = require('path');
 var Sequelize = require('sequelize');
 var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || 'development';
-// var env       = process.env.NODE_ENV || 'production';
 var config = require(__dirname + '/../config/config.json')[env];
 var db = {};
-
-console.log('config', config);
-
-if (config.use_env_variable) {
-    var sequelize = new Sequelize(process.env[config.use_env_variable]);
-} else {
-    var sequelize = new Sequelize(config.database, config.username, config.password, config);
+ 
+if (process.env.JAWSDB_URL){
+  console.log("Using JawsDB: " + process.env.JAWSDB_URL);
+  var sequelize = new Sequelize(process.env.JAWSDB_URL);
+} 
+else {
+  console.log("Using default config.json.");
+  var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
 fs
