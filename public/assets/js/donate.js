@@ -2,10 +2,12 @@ $(document).ready(function() {
     console.log("ready!");
 
     $("#formContainer").hide();
+    $("#confirm").hide(); 
 
     $("#donateButton").on('click', function(e) {
       e.preventDefault();
       $("#formContainer").show();
+      $("#confirm").hide();
       console.log('buttonCode')
     });    
 
@@ -109,8 +111,15 @@ $(document).ready(function() {
               console.log("New Transaction: ", newTransaction);
               //create new transaction
               // $.post('/api/transaction', newTransaction);
-            $("#recipientForm").trigger('reset'); 
-
+            $("#recipientForm").trigger('reset');
+            $("#formContainer").hide();
+            $("#confirm").show();
+            $("#confirmInfo")
+              .append("Tnank you, " + donorFirst + " " + donorLast + " !!")
+              .append("<br><br>")
+              .append("Your donation will be sent to: ")
+              .append("<br>")
+              .append("<p>"+ recipientFirst+" " + recipientLast + "<br/>" +recipientMailing+ "</p>");
           }
         }         
     });
